@@ -59,7 +59,7 @@ The bar shows the progress of the sampling, the number of samples drawn, the ext
 
 The result of the execution will be a table containing the details of the obtained posterior:
 
-![Screenshot 2023-11-04 120155](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/796333a9-a1a2-4025-a45b-dec3bac5c4a4)
+![Screenshot 2023-11-09 132621](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/3e973628-0646-4fa2-b087-e602f8e4d983)
 
 We obtain this table with these instructions:
 ```Python
@@ -69,7 +69,7 @@ print(az.summary(chain.posterior['bkg']))
 
 And a plot of the curve:
 
-![Screenshot 2023-11-04 120233](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/b92fb55b-702e-4ef4-a1fd-c54f560e3393)
+![Screenshot 2023-11-09 132627](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/e38c3618-d413-405c-b83d-6d6eaa04038b)
 
 We obtain this table with these instructions:
 ```Python
