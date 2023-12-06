@@ -9,7 +9,7 @@ import numpy as np
 import arviz as az
 from pymc.distributions.transforms import Interval
 ```
-The last line is needed specifically for the codes from chapter 8.12.2.6 and 8.12.3
+The last line is specifically needed for the codes from chapter 8.12.2.6 and 8.12.3
 ### STEP 2: setup the code for running:
 We start by choosing a model: for this example, we simulate the model from chapter 6.1.2
 ```Python
@@ -33,7 +33,7 @@ First of all, we need to import the data from the dataset:
 ```Python
 (obstot, obsbkg, C) = np.loadtxt('/Dataset/data6.1.2.dat.R', delimiter = ",", unpack = True)
 ```
-Then we specify a model, wich will contain the priors, the likelihoods and the instructions for sample and plotting the result:
+Then we specify a model, wich will contain the priors, the likelihoods and the instructions for sampling and plotting the result:
 In this case the priors are:
 ```Python
 pm.Uniform("s", lower = 0, upper = 1.0e7)
@@ -51,9 +51,7 @@ chain = pm.sample(return_inferencedata = True)
 ### Step 3: run the simulation:
 Now we can start the simulation.
 
-During the execution, a green progressive bar will show up:
-
-The bar shows the progress of the sampling, the number of samples drawn, the extimated time completion time, the number of the chain and the divergences
+During the execution, a green progressive bar will show up. The bar shows the progress of the sampling, the number of samples drawn, the extimated time completion time, the number of the chain and the divergences:
 
 ![Screenshot 2023-11-04 120046](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/e88c5b1b-d5a6-4cdb-bc30-1f92dfbb14b0)
 
