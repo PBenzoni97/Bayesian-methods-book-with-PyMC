@@ -33,7 +33,7 @@ First of all, we need to import the data from the dataset:
 ```Python
 (obstot, obsbkg, C) = np.loadtxt('/Dataset/data6.1.2.dat.R', delimiter = ",", unpack = True)
 ```
-Then we specify a model, wich will contain the priors, the likelihoods and the instructions for sampling and plotting the result:
+Then we specify a model, wich will contain the priors, the likelihoods and the instructions for sampling and plotting the result.
 In this case the priors are:
 ```Python
 pm.Uniform("s", lower = 0, upper = 1.0e7)
