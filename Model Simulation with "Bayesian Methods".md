@@ -55,7 +55,7 @@ During the execution, a green progressive bar will show up. The bar shows the pr
 
 ![Screenshot 2023-11-04 120046](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/e88c5b1b-d5a6-4cdb-bc30-1f92dfbb14b0)
 
-The result of the execution will be a table containing the details of the obtained posterior:
+The result of the execution will be a table containing the details of the obtained posteriors:
 
 ![Screenshot 2023-11-09 132621](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/3e973628-0646-4fa2-b087-e602f8e4d983)
 
