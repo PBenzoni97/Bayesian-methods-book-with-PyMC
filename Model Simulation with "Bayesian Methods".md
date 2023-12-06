@@ -23,11 +23,11 @@ with pm.Model() as model:
 
   chain = pm.sample(return_inferencedata = True)
 
-  print(az.summary(chain.posterior['A']))
-  print(az.summary(chain.posterior['B']))
+  print(az.summary(chain.posterior['s']))
+  print(az.summary(chain.posterior['bkg']))
 
-  figure = corner.corner(chain.posterior['A'][0])
-  figure = corner.corner(chain.posterior['B'][0])
+  figure = corner.corner(chain.posterior['s'][0])
+  figure = corner.corner(chain.posterior['bkg'][0])
 ```
 First of all, we need to import the data from the dataset:
 ```Python
@@ -69,7 +69,7 @@ And a plot of the curve:
 
 ![Screenshot 2023-11-09 132627](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/e38c3618-d413-405c-b83d-6d6eaa04038b)
 
-We obtain this table with these instructions:
+We obtain these figures with these instructions:
 ```Python
 figure = corner.corner(chain.posterior['s'][0])
 figure = corner.corner(chain.posterior['bkg'][0])
