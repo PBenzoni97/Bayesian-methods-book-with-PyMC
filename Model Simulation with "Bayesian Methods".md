@@ -16,7 +16,7 @@ The last line is only needed for some of the codes
 For this example, we fit the model from chapter 6.1.2.
 First of all, we need to read the data:
 ```Python
-(obstot, obsbkg, C) = np.loadtxt('/Dataset/data6.1.2.dat.R', delimiter = ",", unpack = True)
+(obstot, obsbkg, C) = np.loadtxt('/Dataset/data6.1.2.dat', delimiter = ",", unpack = True)
 ```
 The full model is specified in the library:
 ```Python
