@@ -1,6 +1,6 @@
 # FITTING A MODEL WITH THE LIBRARY "Bayesian-Methods"
 
-### STEP 1: import libraries:
+### STEP 1: import libraries.
 
 ```Python
 import pymc as pm
@@ -11,7 +11,7 @@ from pymc.distributions.transforms import Interval
 ```
 The last line is only needed for some of the codes
 
-### STEP 2: setup the code for running:
+### STEP 2: setup the code for running.
 
 For this example, we fit the model from chapter 6.1.2.
 First of all, we need to import the data from the dataset:
@@ -27,7 +27,7 @@ with pm.Model() as model:
   pm.Poisson("obsbkg", mu = model['bkg'], observed = obsbkg)
 ```
 
-### Step 3: run the simulation:
+### Step 3: run the sampler.
 
 To sample the posterior distributions we use this instruction:
 ```Python
@@ -35,6 +35,8 @@ chain = pm.sample(return_inferencedata = True)
 ```
 
 ![Screenshot 2023-11-04 120046](https://github.com/ilBenza97/Bayesian-Methods/assets/145661415/e88c5b1b-d5a6-4cdb-bc30-1f92dfbb14b0)
+
+### Step 4 (optional): plot and summarize.
 
 To get a summary of the posterior you can use:
 ```Python
