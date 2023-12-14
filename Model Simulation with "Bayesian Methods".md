@@ -1,7 +1,7 @@
-# SIMULATE A MODEL WITH THE LIBRARY "BAYESIAN METHODS"
-Here we can see an example of a model simulation with 'bayesianmethods'
+# FITTING A MODEL WITH THE LIBRARY "Bayesian-Methods"
+
 ### STEP 1: import libraries:
-First of all, we need to import the libraries: 
+
 ```Python
 import pymc as pm
 import corner
@@ -9,9 +9,9 @@ import numpy as np
 import arviz as az
 from pymc.distributions.transforms import Interval
 ```
-The last line is specifically needed for the codes from chapter 8.12.2.6 and 8.12.3
+The last line is only needed for some of the codes
 ### STEP 2: setup the code for running:
-We start by choosing a model: for this example, we simulate the model from chapter 6.1.2
+For this example, we simulate the model from chapter 6.1.2.
 ```Python
 (obstot, obsbkg, C) = np.loadtxt('/Dataset/data6.1.2.dat.R', delimiter = ",", unpack = True)
 
