@@ -9,7 +9,7 @@
 -  [numpy](https://numpy.org/)
 -  [arviz](https://python.arviz.org/)
 
-To install the libraries these code lines are needed:
+To install these libraries you may use the following:
 
 ```Python
 !pip install corner
