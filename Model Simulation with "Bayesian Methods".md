@@ -14,7 +14,7 @@ The last line is only needed for some of the codes
 ### STEP 2: setup the code for running.
 
 For this example, we fit the model from chapter 6.1.2.
-First of all, we need to import the data from the dataset:
+First of all, we need to read the data:
 ```Python
 (obstot, obsbkg, C) = np.loadtxt('/Dataset/data6.1.2.dat.R', delimiter = ",", unpack = True)
 ```
