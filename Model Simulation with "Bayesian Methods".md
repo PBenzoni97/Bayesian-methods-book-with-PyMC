@@ -18,7 +18,7 @@ First of all, we need to read the data:
 ```Python
 (obstot, obsbkg, C) = np.loadtxt('/Dataset/data6.1.2.dat.R', delimiter = ",", unpack = True)
 ```
-The full model is specified in the library.
+The full model is specified in the library:
 ```Python
 with pm.Model() as model:
   pm.Uniform("s", lower = 0, upper = 1.0e7)
